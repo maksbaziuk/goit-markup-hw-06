@@ -17,6 +17,8 @@
     <title>Document</title>
   </head>
   <body>
+    <!-- Header -->
+
     <header class="header">
       <div class="container header-container">
         <nav class="header-nav">
@@ -28,7 +30,7 @@
               <a class="header-nav-link current" href="./index.html">Studio</a>
             </li>
             <li class="header-nav-list-item">
-              <a class="header-nav-link" href="">Portfolio</a>
+              <a class="header-nav-link" href="#portfolio">Portfolio</a>
             </li>
             <li class="header-nav-list-item">
               <a class="header-nav-link" href="">Contacts</a>
@@ -49,69 +51,178 @@
             </li>
           </ul>
         </address>
+        <button class="burger-btn" type="button" data-menu-open>
+          <svg class="burger-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mobile-meny" data-menu>
+        <div class="container mobile-meny-container">
+          <button class="mobile-menu-close-btn" data-menu-close>
+            <svg class="mobile-menu-close-icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <nav class="mobile-menu-nav">
+            <ul class="mobile-menu-nav-list">
+              <li class="mobile-menu-nav-list-item">
+                <a class="mobile-menu-nav-link" href="./index.html">Studio</a>
+              </li>
+              <li class="mobile-menu-nav-item">
+                <a class="mobile-menu-nav-link" href="#portfolio">Portfolio</a>
+              </li>
+              <li class="mobile-menu-nav-item">
+                <a class="mobile-menu-nav-link" href="">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <address class="mobile-contacts">
+            <ul class="mobile-contacts-list">
+              <li class="mobile-contacts-item">
+                <a class="mobile-contacts-link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="mobile-contacts-item">
+                <a class="mobile-contacts-link" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+            </ul>
+          </address>
+          <div class="mobile-menu-social-container">
+            <ul class="mobile-menu-social-list">
+              <li class="mobile-menu-social-item">
+                <a
+                  class="mobile-menu-social-list-link"
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                >
+                  <svg
+                    class="mobile-menu-social-list-logo"
+                    width="24"
+                    height="24"
+                  >
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile-menu-social-item">
+                <a
+                  class="mobile-menu-social-list-link"
+                  href="https://x.com/"
+                  target="_blank"
+                >
+                  <svg
+                    class="mobile-menu-social-list-logo"
+                    width="24"
+                    height="24"
+                  >
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile-menu-social-item">
+                <a
+                  class="mobile-menu-social-list-link"
+                  href="https://www.facebook.com/"
+                  target="_blank"
+                >
+                  <svg
+                    class="mobile-menu-social-list-logo"
+                    width="24"
+                    height="24"
+                  >
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile-menu-social-item">
+                <a
+                  class="mobile-menu-social-list-link"
+                  href="https://www.linkedin.com/"
+                  target="_blank"
+                >
+                  <svg
+                    class="mobile-menu-social-list-logo"
+                    width="24"
+                    height="24"
+                  >
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
 
     <main>
+      <!-- Hero Banner -->
+
       <section class="hero-banner">
         <div class="container hero-banner-container">
           <h1 class="hero-banner-title">
             Effective Solutions for Your Business
           </h1>
-          <button class="hero-banner-button" type="button">
+          <button class="hero-banner-button" type="button" data-modal-open>
             Order Service
           </button>
         </div>
       </section>
 
-      <section class="feature">
-        <div class="container">
-          <h2 class="feature-title visually-hidden">не може бути пустим</h2>
-          <ul class="feature-list">
-            <li class="feature-list-item">
-              <div class="feature-list-item-container">
-                <svg class="feature-list-item-icon" width="64" height="64">
+      <!-- Benefits -->
+
+      <section class="benefits">
+        <div class="container benefits-container">
+          <h2 class="benefits-title visually-hidden">Benefits title</h2>
+          <ul class="benefits-list">
+            <li class="benefits-list-item">
+              <div class="benefits-list-item-container">
+                <svg class="benefits-list-item-icon" width="64" height="64">
                   <use href="./images/icons.svg#icon-antenna"></use>
                 </svg>
               </div>
-              <h3 class="feature-list-title">Strategy</h3>
-              <p class="feature-list-text">
+              <h3 class="benefits-list-title">Strategy</h3>
+              <p class="benefits-list-text">
                 Our goal is to identify the business problem to walk away with
                 the perfect and creative solution.
               </p>
             </li>
-            <li class="feature-list-item">
-              <div class="feature-list-item-container">
-                <svg class="feature-list-item-icon" width="64" height="64">
+            <li class="benefits-list-item">
+              <div class="benefits-list-item-container">
+                <svg class="benefits-list-item-icon" width="64" height="64">
                   <use href="./images/icons.svg#icon-clock"></use>
                 </svg>
               </div>
-              <h3 class="feature-list-title">Punctuality</h3>
-              <p class="feature-list-text">
+              <h3 class="benefits-list-title">Punctuality</h3>
+              <p class="benefits-list-text">
                 Bring the key message to the brand's audience for the best price
                 within the shortest possible time.
               </p>
             </li>
-            <li class="feature-list-item">
-              <div class="feature-list-item-container">
-                <svg class="feature-list-item-icon" width="64" height="64">
+            <li class="benefits-list-item">
+              <div class="benefits-list-item-container">
+                <svg class="benefits-list-item-icon" width="64" height="64">
                   <use href="./images/icons.svg#icon-diagram"></use>
                 </svg>
               </div>
-              <h3 class="feature-list-title">Diligence</h3>
-              <p class="feature-list-text">
+              <h3 class="benefits-list-title">Diligence</h3>
+              <p class="benefits-list-text">
                 Research and confirm brands with the strongest digital growth
                 opportunities and minimize risk.
               </p>
             </li>
-            <li class="feature-list-item">
-              <div class="feature-list-item-container">
-                <svg class="feature-list-item-icon" width="64" height="64">
+            <li class="benefits-list-item">
+              <div class="benefits-list-item-container">
+                <svg class="benefits-list-item-icon" width="64" height="64">
                   <use href="./images/icons.svg#icon-astronaut"></use>
                 </svg>
               </div>
-              <h3 class="feature-list-title">Technologies</h3>
-              <p class="feature-list-text">
+              <h3 class="benefits-list-title">Technologies</h3>
+              <p class="benefits-list-text">
                 Design practice focused on digital experiences. We bring forth a
                 deep passion for problem-solving.
               </p>
@@ -120,6 +231,8 @@
         </div>
       </section>
 
+      <!-- Team -->
+
       <section class="team">
         <div class="container">
           <h2 class="team-title">Our Team</h2>
@@ -127,7 +240,9 @@
             <li class="team-list-item">
               <img
                 class="team-list-image"
-                src="./images/photo-1.jpg"
+                srcset="./images/photo-mark.jpg x1,
+                  ./images/photo-mark@x2.jpg 2x"
+                src="./images/photo-mark.jpg"
                 alt="Product Designer"
                 width="264"
                 height="260"
@@ -135,8 +250,8 @@
               <div class="team-list-item-container">
                 <h3 class="team-list-title">Mark Guerrero</h3>
                 <p class="team-list-title-text">Product Designer</p>
-                <ul class="social-item">
-                  <li class="social-list">
+                <ul class="social-list">
+                  <li class="social-item">
                     <a
                       class="social-list-link"
                       href="https://www.instagram.com/"
@@ -147,7 +262,7 @@
                       </svg>
                     </a>
                   </li>
-                  <li class="social-list">
+                  <li class="social-item">
                     <a
                       class="social-list-link"
                       href="https://x.com/"
@@ -158,7 +273,7 @@
                       </svg>
                     </a>
                   </li>
-                  <li class="social-list">
+                  <li class="social-item">
                     <a
                       class="social-list-link"
                       href="https://www.facebook.com/"
@@ -169,7 +284,7 @@
                       </svg>
                     </a>
                   </li>
-                  <li class="social-list">
+                  <li class="social-item">
                     <a
                       class="social-list-link"
                       href="https://www.linkedin.com/"
@@ -186,7 +301,9 @@
             <li class="team-list-item">
               <img
                 class="team-list-image"
-                src="./images/photo-2.jpg"
+                srcset="./images/photo-tom.jpg x1,
+                  ./images/photo-tom@x2.jpg 2x"
+                src="./images/photo-tom.jpg"
                 alt="Frontend Developer"
                 width="264"
                 height="260"
@@ -194,8 +311,8 @@
               <div class="team-list-item-container">
                 <h3 class="team-list-title">Tom Ford</h3>
                 <p class="team-list-title-text">Frontend Developer</p>
-                <ul class="social-item">
-                  <li class="social-list">
+                <ul class="social-list">
+                  <li class="social-item">
                     <a
                       class="social-list-link"
                       href="https://www.instagram.com/"
@@ -206,7 +323,7 @@
                       </svg>
                     </a>
                   </li>
-                  <li class="social-list">
+                  <li class="social-item">
                     <a
                       class="social-list-link"
                       href="https://x.com/"
@@ -217,7 +334,7 @@
                       </svg>
                     </a>
                   </li>
-                  <li class="social-list">
+                  <li class="social-item">
                     <a
                       class="social-list-link"
                       href="https://www.facebook.com/"
@@ -228,7 +345,7 @@
                       </svg>
                     </a>
                   </li>
-                  <li class="social-list">
+                  <li class="social-item">
                     <a
                       class="social-list-link"
                       href="https://www.linkedin.com/"
@@ -245,7 +362,9 @@
             <li class="team-list-item">
               <img
                 class="team-list-image"
-                src="./images/photo-3.jpg"
+                srcset="./images/photo-camila.jpg x1,
+                  ./images/photo-camila@x2.jpg 2x"
+                src="./images/photo-camila.jpg"
                 alt="Marketing"
                 width="264"
                 height="260"
@@ -253,8 +372,8 @@
               <div class="team-list-item-container">
                 <h3 class="team-list-title">Camila Garcia</h3>
                 <p class="team-list-title-text">Marketing</p>
-                <ul class="social-item">
-                  <li class="social-list">
+                <ul class="social-list">
+                  <li class="social-item">
                     <a
                       class="social-list-link"
                       href="https://www.instagram.com/"
@@ -265,7 +384,7 @@
                       </svg>
                     </a>
                   </li>
-                  <li class="social-list">
+                  <li class="social-item">
                     <a
                       class="social-list-link"
                       href="https://x.com/"
@@ -276,7 +395,7 @@
                       </svg>
                     </a>
                   </li>
-                  <li class="social-list">
+                  <li class="social-item">
                     <a
                       class="social-list-link"
                       href="https://www.facebook.com/"
@@ -287,7 +406,7 @@
                       </svg>
                     </a>
                   </li>
-                  <li class="social-list">
+                  <li class="social-item">
                     <a
                       class="social-list-link"
                       href="https://www.linkedin.com/"
@@ -304,7 +423,9 @@
             <li class="team-list-item">
               <img
                 class="team-list-image"
-                src="./images/photo-4.jpg"
+                srcset="./images/photo-daniel.jpg x1,
+                  ./images/photo-daniel@x2.jpg 2x"
+                src="./images/photo-daniel.jpg"
                 alt="UI Designer"
                 width="264"
                 height="260"
@@ -312,8 +433,8 @@
               <div class="team-list-item-container">
                 <h3 class="team-list-title">Daniel Wilson</h3>
                 <p class="team-list-title-text">UI Designer</p>
-                <ul class="social-item">
-                  <li class="social-list">
+                <ul class="social-list">
+                  <li class="social-item">
                     <a
                       class="social-list-link"
                       href="https://www.instagram.com/"
@@ -324,7 +445,7 @@
                       </svg>
                     </a>
                   </li>
-                  <li class="social-list">
+                  <li class="social-item">
                     <a
                       class="social-list-link"
                       href="https://x.com/"
@@ -335,7 +456,7 @@
                       </svg>
                     </a>
                   </li>
-                  <li class="social-list">
+                  <li class="social-item">
                     <a
                       class="social-list-link"
                       href="https://www.facebook.com/"
@@ -346,7 +467,7 @@
                       </svg>
                     </a>
                   </li>
-                  <li class="social-list">
+                  <li class="social-item">
                     <a
                       class="social-list-link"
                       href="https://www.linkedin.com/"
@@ -363,6 +484,9 @@
           </ul>
         </div>
       </section>
+
+      <!-- Portfolio -->
+
       <section class="portfolio" id="portfolio">
         <div class="container">
           <h2 class="portfolio-title">Our Portfolio</h2>
@@ -370,8 +494,10 @@
             <li class="portfolio-list-item">
               <div class="portfolio-list-image-wrapper">
                 <img
+                  srcset="./images/banking.jpg x1,
+                  ./images/banking@x2.jpg 2x"
                   class="portfolio-list-image"
-                  src="./images/portfolio-1-min.jpg"
+                  src="./images/banking.jpg"
                   alt="Banking App"
                   width="360"
                   height="300"
@@ -390,8 +516,10 @@
             <li class="portfolio-list-item">
               <div class="portfolio-list-image-wrapper">
                 <img
+                  srcset="./images/cashlespayment.jpg x1,
+                  ./images/cashlespayment@x2.jpg 2x"
                   class="portfolio-list-image"
-                  src="./images/portfolio-2-min.jpg"
+                  src="./images/cashlespayment.jpg.jpg"
                   alt="Cashless Payment"
                   width="360"
                   height="300"
@@ -410,8 +538,10 @@
             <li class="portfolio-list-item">
               <div class="portfolio-list-image-wrapper">
                 <img
+                  srcset="./images/meditationapp.jpg x1,
+                  ./images/meditationapp@x2.jpg 2x"
                   class="portfolio-list-image"
-                  src="./images/portfolio-3-min.jpg"
+                  src="./images/meditationapp.jpg"
                   alt="Meditation App"
                   width="360"
                   height="300"
@@ -430,8 +560,10 @@
             <li class="portfolio-list-item">
               <div class="portfolio-list-image-wrapper">
                 <img
+                  srcset="./images/taxiservice.jpg x1,
+                  ./images/taxiservice@x2.jpg 2x"
                   class="portfolio-list-image"
-                  src="./images/portfolio-4-min.jpg"
+                  src="./images/taxiservice.jpg"
                   alt="Taxi Service"
                   width="360"
                   height="300"
@@ -451,8 +583,10 @@
             <li class="portfolio-list-item">
               <div class="portfolio-list-image-wrapper">
                 <img
+                  srcset="./images/screenillustrations.jpg x1,
+                  ./images/screenillustrations@x2.jpg 2x"
                   class="portfolio-list-image"
-                  src="./images/portfolio-5-min.jpg"
+                  src="./images/screenillustrations.jpg"
                   alt="Screen Illustrations"
                   width="360"
                   height="300"
@@ -471,8 +605,10 @@
             <li class="portfolio-list-item">
               <div class="portfolio-list-image-wrapper">
                 <img
+                  srcset="./images/onlinecourses.jpg x1,
+                  ./images/onlinecourses@x2.jpg 2x"
                   class="portfolio-list-image"
-                  src="./images/portfolio-6-min.jpg"
+                  src="./images/onlinecourses.jpg"
                   alt="Online Courses"
                   width="360"
                   height="300"
@@ -494,10 +630,12 @@
       </section>
     </main>
 
+    <!-- Footer -->
+
     <footer class="footer">
       <div class="container footer-container">
         <div class="footer-logo-container">
-          <a class="footer-logo" href="./index.html"
+          <a class="footer-logo logo" href="./index.html"
             >Web<span class="footer-logo-part">Studio</span></a
           >
           <p class="footer-text">
@@ -508,8 +646,8 @@
 
         <div class="footer-social-container">
           <p class="footer-social-text">Social media</p>
-          <ul class="footer-social-item social-item">
-            <li class="social-list">
+          <ul class="footer-social-list social-list">
+            <li class="social-item">
               <a
                 class="social-list-link footer-social-list-link"
                 href="https://www.instagram.com/"
@@ -520,7 +658,7 @@
                 </svg>
               </a>
             </li>
-            <li class="social-list">
+            <li class="social-item">
               <a
                 class="social-list-link footer-social-list-link"
                 href="https://x.com/"
@@ -531,7 +669,7 @@
                 </svg>
               </a>
             </li>
-            <li class="social-list">
+            <li class="social-item">
               <a
                 class="social-list-link footer-social-list-link"
                 href="https://www.facebook.com/"
@@ -542,7 +680,7 @@
                 </svg>
               </a>
             </li>
-            <li class="social-list">
+            <li class="social-item">
               <a
                 class="social-list-link footer-social-list-link"
                 href="https://www.linkedin.com/"
@@ -577,9 +715,12 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop">
+
+    <!-- Pop up -->
+
+    <div class="backdrop" data-modal>
       <div class="pop-up">
-        <button type="button" class="pop-up-close-btn">
+        <button type="button" class="pop-up-close-btn" data-modal-close>
           <svg class=".pop-up-icon-close" width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
@@ -656,9 +797,9 @@
                   <use href="./images/icons.svg#icon-check"></use>
                 </svg>
               </span>
-              I accept the terms and conditions of the
-              <a class="pop-up-privacy-link visually-hidden" href=""
-                >Privacy Policy</a
+              <span>
+                I accept the terms and conditions of the
+                <a class="pop-up-privacy" href="#">Privacy Policy</a></span
               ></label
             >
           </div>
@@ -666,5 +807,7 @@
         </form>
       </div>
     </div>
+    <script src="./js/menu.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
