@@ -392,7 +392,7 @@ svg {
 /* Hero banner */
 
 .hero-banner {
-  max-width: 320px;
+  /* max-width: 320px; */
   background-color: #2e2f42;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
@@ -403,13 +403,12 @@ svg {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  margin-left: auto;
-  margin-right: auto;
   align-items: center;
   flex-direction: column;
   justify-content: center;
   text-align: center;
   display: flex;
+  margin: auto;
 }
 
 @media (min-resolution: 192dpi) {
